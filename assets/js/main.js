@@ -335,15 +335,3 @@ $(function () {
         "retina_detect": !0
     });
 });
-
-var PINCode = localStorage.getItem("PIN");
-if (PINCode == 536702) {
-    //none
-} else {
-    window.location.replace("lock.html");
-}
-setTimeout(
-    function() 
-    {
-        localStorage.removeItem("PIN");
-    }, 5000);
